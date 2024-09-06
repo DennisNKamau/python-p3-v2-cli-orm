@@ -170,7 +170,7 @@ class Department:
         from models.employee import Employee
         sql = """
             SELECT * FROM employees
-            WHERE department_id = ?
+            WHERE department_id = ?  
         """
         CURSOR.execute(sql, (self.id,),)
 
